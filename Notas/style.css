@@ -1,0 +1,36 @@
+/* Estilo personalizado para la lista */
+.custom-list {
+    list-style-type: none; /* Elimina los puntos por defecto */
+    padding-left: 0;
+}
+
+.custom-list li::before {
+    content: "✤"; /* Añade un círculo */
+    color: hwb(0 0% 100%); /* Color del círculo */
+    font-weight: bold; /* Círculo más grueso */
+    display: inline-block;
+    width: 20px; /* Espacio para el círculo */
+    margin-left: -1em; /* Mueve el círculo a la izquierda */
+}
+
+/* Clase personalizada para el input más corto */
+.custom-input-width {
+    max-width: 500px; /* Ajusta el ancho según tus necesidades */
+    margin: 0 auto; /* Centra el input */
+}
+
+.btn-outline-danger {
+    position: absolute;
+    right: 10px; /* Ajusta la posición desde el borde derecho */
+    top: 500%;
+    transform: translateY(-50%);
+}
+
+.imagen-arriba-input {
+    position: absolute;
+    top: 50px; /* Ajusta la posición vertical de la imagen */
+    left: 50%; /* Centra la imagen horizontalmente */
+    transform: translateX(-50%); /* Centra la imagen horizontalmente */
+    width: 200px; /* Ajusta el ancho de la imagen según tus necesidades */
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+}
